@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav" id="nav">
+            <span class="header__logo">Towerup</span>
+            <ul id="list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Prices</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <box-icon name='menu' id="button"></box-icon>
+        </nav>
+
+        <div class="header__sale-text">
+            <h1>2034</h1>
+            <p>sale starts in</p>
+        </div>
+
+        <div class="header__text-box">
+            <h1>Better designs <br>
+                brick by brick</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <a href="#">Discover</a>
+        </div>
+
+        <div class="header__social-icons">
+            <a href=""><img src="facebook-logo.svg" alt="facebook"></a>
+            <a href=""><img src="twitter.svg" alt="twitter"></a>
+            <a href=""><img src="instagram.svg" alt=""></a>
+        </div>
+
+        <div class="header__background">
+            <img src="shape.png" alt="shape">
+            <img src="shape.png" alt="shape">
+            <img src="shape.png" alt="shape">
+        </div>
+
+    </header>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script>
+        const button = document.querySelector("#button");
+        const list = document.querySelector("#list");
+
+        button.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            list.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
